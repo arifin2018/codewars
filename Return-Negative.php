@@ -12,9 +12,9 @@ function makeNegative(float $num)
     // return $num > 0 ? -$num : $num;
 }
 
-echo makeNegative(7);
+// echo makeNegative(7);
 // echo makeNegative(-20);
-// echo makeNegative(0);
+echo makeNegative(0);
 // echo makeNegative(0.12);
 // class MakeNegativeTestCases extends TestCase
 // {
