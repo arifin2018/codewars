@@ -1,4 +1,4 @@
-module codewars
+module github.com/arifin2018/codewars.git
 
 go 1.20
 
