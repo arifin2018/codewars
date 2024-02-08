@@ -3,8 +3,10 @@ package Go
 import (
 	"bytes"
 	"encoding/csv"
+	"fmt"
 	"log"
 	"strconv"
+	"strings"
 )
 
 //https://www.codewars.com/kata/5a34af40e1ce0eb1f5000036/train/go
@@ -33,4 +35,16 @@ func CSV_representation_of_array(data [][]int) string {
 	result = s[:len(s)-1]
 
 	return result
+}
+
+func CSV_representation_of_array1(array [][]int) string {
+	array2 := []string{}
+	for _, a := range array {
+		k := []string{}
+		for _, n := range a {
+			k = append(k, fmt.Sprint(n))
+		}
+		array2 = append(array2, strings.Join(k, ","))
+	}
+	return strings.Join(array2, "\n")
 }
