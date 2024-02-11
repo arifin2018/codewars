@@ -25,5 +25,9 @@ func TestMultipleOfIndex(t *testing.T) {
 	)
 	// fmt.Println(test1)
 	assert.Equal(t, []int{-6, 32, 25}, test1)
+}
 
+func TestYouCantCodeUnderPressure_1(t *testing.T) {
+	test1 := YouCantCodeUnderPressure_1(1)
+	assert.Equal(t, 2, test1)
 }
