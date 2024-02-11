@@ -13,11 +13,10 @@ import (
 
 func CSV_representation_of_array(data [][]int) string {
 	var records [][]string
-	var convertData []string
 	var result string
 
 	for i := 0; i < len(data); i++ {
-		convertData = nil
+		var convertData []string
 		for _, v := range data[i] {
 			convertData = append(convertData, strconv.Itoa(v))
 		}
