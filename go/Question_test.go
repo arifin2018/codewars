@@ -31,3 +31,8 @@ func TestYouCantCodeUnderPressure_1(t *testing.T) {
 	test1 := YouCantCodeUnderPressure_1(1)
 	assert.Equal(t, 2, test1)
 }
+
+func TestCheckForFactor(t *testing.T) {
+	test1 := CheckForFactor(10, 2)
+	assert.Equal(t, true, test1)
+}
