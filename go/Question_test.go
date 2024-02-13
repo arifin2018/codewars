@@ -36,3 +36,8 @@ func TestCheckForFactor(t *testing.T) {
 	test1 := CheckForFactor(10, 2)
 	assert.Equal(t, true, test1)
 }
+
+func TestConvertAStringToAnArray(t *testing.T) {
+	test1 := ConvertAStringToAnArray("Robin Singh")
+	assert.Equal(t, []string{"Robin", "Singh"}, test1)
+}
