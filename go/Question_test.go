@@ -41,3 +41,8 @@ func TestConvertAStringToAnArray(t *testing.T) {
 	test1 := ConvertAStringToAnArray("Robin Singh")
 	assert.Equal(t, []string{"Robin", "Singh"}, test1)
 }
+
+func TestAbbreviateATwoWordName(t *testing.T) {
+	test1 := AbbreviateATwoWordName("sam harris")
+	assert.Equal(t, "S.H", test1)
+}
