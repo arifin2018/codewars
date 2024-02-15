@@ -4,6 +4,8 @@ import (
 	"strings"
 )
 
+// https://www.codewars.com/kata/57eadb7ecd143f4c9c0000a3
+
 func AbbreviateATwoWordNameMySelf(name string) string {
 	var result string
 	splitString := strings.Split(name, " ")

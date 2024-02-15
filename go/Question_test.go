@@ -46,3 +46,10 @@ func TestAbbreviateATwoWordName(t *testing.T) {
 	test1 := AbbreviateATwoWordName("sam harris")
 	assert.Equal(t, "S.H", test1)
 }
+
+func TestIsItAPalindrome(t *testing.T) {
+	test1 := IsItAPalindrome("Abba")
+	assert.Equal(t, true, test1)
+	test2 := IsItAPalindrome("hello")
+	assert.Equal(t, true, test2)
+}
