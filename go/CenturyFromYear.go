@@ -4,6 +4,8 @@ import (
 	"strconv"
 )
 
+//https://www.codewars.com/kata/5a3fe3dde1ce0e8ed6000097/solutions/go
+
 func CenturyFromYearMySelf(year int) int {
 	yearIntToString := strconv.Itoa(year)
 	result, _ := strconv.Atoi(yearIntToString[:len(yearIntToString)-2])
