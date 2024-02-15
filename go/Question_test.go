@@ -64,3 +64,12 @@ func TestCenturyFromYear(t *testing.T) {
 	test4 := CenturyFromYearMySelf(93)
 	assert.Equal(t, 1, test4)
 }
+
+func TestIfYouCantSleepJustCountSheep(t *testing.T) {
+	test1 := IfYouCantSleepJustCountSheep(2)
+	assert.Equal(t, "1 sheep...2 sheep...", test1)
+	test2 := IfYouCantSleepJustCountSheep(0)
+	assert.Equal(t, "", test2)
+	test4 := IfYouCantSleepJustCountSheep(1)
+	assert.Equal(t, "1 sheep...", test4)
+}
