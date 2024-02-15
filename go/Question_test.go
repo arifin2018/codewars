@@ -53,3 +53,14 @@ func TestIsItAPalindrome(t *testing.T) {
 	test2 := IsItAPalindrome("hello")
 	assert.Equal(t, true, test2)
 }
+
+func TestCenturyFromYear(t *testing.T) {
+	test1 := CenturyFromYearMySelf(1990)
+	assert.Equal(t, 20, test1)
+	test2 := CenturyFromYearMySelf(1705)
+	assert.Equal(t, 18, test2)
+	test3 := CenturyFromYearMySelf(631933)
+	assert.Equal(t, 6320, test3)
+	test4 := CenturyFromYearMySelf(93)
+	assert.Equal(t, 1, test4)
+}
