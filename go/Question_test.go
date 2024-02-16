@@ -75,11 +75,11 @@ func TestIfYouCantSleepJustCountSheep(t *testing.T) {
 }
 
 func TestTotalAmountOfPoints(t *testing.T) {
-	test1 := TotalAmountOfPoints([]string{"1:0","2:0","3:0","4:0","2:1","3:1","4:1","3:2","4:2","4:3"})
+	test1 := TotalAmountOfPoints([]string{"1:0", "2:0", "3:0", "4:0", "2:1", "3:1", "4:1", "3:2", "4:2", "4:3"})
 	assert.Equal(t, 30, test1)
-	test2 := TotalAmountOfPoints([]string{"1:1","2:2","3:3","4:4","2:2","3:3","4:4","3:3","4:4","4:4"})
+	test2 := TotalAmountOfPoints([]string{"1:1", "2:2", "3:3", "4:4", "2:2", "3:3", "4:4", "3:3", "4:4", "4:4"})
 	assert.Equal(t, 10, test2)
-	test4 := TotalAmountOfPoints([]string{"0:1","0:2","0:3","0:4","1:2","1:3","1:4","2:3","2:4","3:4"})
+	test4 := TotalAmountOfPoints([]string{"0:1", "0:2", "0:3", "0:4", "1:2", "1:3", "1:4", "2:3", "2:4", "3:4"})
 	assert.Equal(t, 0, test4)
 }
 
@@ -88,4 +88,15 @@ func TestHighAndLow(t *testing.T) {
 	assert.Equal(t, "42 -9", test1)
 	test2 := HighAndLow("1 2 3")
 	assert.Equal(t, "3 1", test2)
+}
+
+func TestIsHeGonnaSurvive(t *testing.T) {
+	test1 := IsHeGonnaSurvive(10, 5)
+	assert.Equal(t, true, test1)
+	test2 := IsHeGonnaSurvive(7, 4)
+	assert.Equal(t, false, test2)
+	test3 := IsHeGonnaSurvive(4, 5)
+	assert.Equal(t, false, test3)
+	test4 := IsHeGonnaSurvive(100, 40)
+	assert.Equal(t, true, test4)
 }
