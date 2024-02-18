@@ -89,3 +89,8 @@ func TestHighAndLow(t *testing.T) {
 	test2 := HighAndLow("1 2 3")
 	assert.Equal(t, "3 1", test2)
 }
+
+func TestReturningStrings(t *testing.T) {
+	test1 := ReturningStrings("Ryan")
+	assert.Equal(t, "Hello, Ryan how are you doing today?", test1)
+}

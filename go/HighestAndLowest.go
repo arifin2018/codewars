@@ -11,9 +11,9 @@ import (
 
 func HighAndLow1(in string) string {
 	// 2272ms 
-	var high int
-	low,_ := strconv.Atoi(string(in[0]))
 	data := strings.Split(in, " ")
+	high,_ := strconv.Atoi(string(data[0]))
+	low,_ := strconv.Atoi(string(data[0]))
 	for _, v := range data {
 		tempInt,_ := strconv.Atoi(string(v))
 		if high < tempInt {
@@ -28,9 +28,9 @@ func HighAndLow1(in string) string {
 
 func HighAndLow(in string) string {
 	// 2101ms 
-	var high int
-	low,_ := strconv.Atoi(string(in[0]))
 	data := strings.Split(in, " ")
+	high,_ := strconv.Atoi(string(data[0]))
+	low,_ := strconv.Atoi(string(data[0]))
 	for i := 0; i < int(math.Ceil(float64(len(data)/2))); i++ {
 		tempIntFront,_ := strconv.Atoi(string(data[i]))
 		tempIntBack,_ := strconv.Atoi(string(data[len(data)-(i+1)]))
