@@ -22,3 +22,18 @@ func TestConverta2(t *testing.T) {
 	var res1 = regex.FindAllString(text, -1)
 	fmt.Printf("%#v \n", res1)
 }
+
+func TestIpsBetween(t *testing.T) {
+	// test1 := IpsBetween("10.0.0.0", "10.0.0.50")
+	// assert.Equal(t, 50, test1)
+	// test2 := IpsBetween("10.0.0.0", "10.0.1.0")
+	// assert.Equal(t, 256, test2)
+	// test3 := IpsBetween("20.0.0.10", "20.0.1.0")
+	// assert.Equal(t, 246, test3)
+	// test4 := IpsBetween("50.0.0.0", "50.1.1.1")
+	// assert.Equal(t, 65793, test4)
+	// test5 := IpsBetween("10.11.12.13", "10.11.13.0")
+	// assert.Equal(t, 243, test5)
+	// test6 := IpsBetween("143.218.244.41", "205.55.162.96")
+	// assert.Equal(t, 102948439, test6)
+}
